@@ -1,0 +1,75 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+p{
+    margin: 0px;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(
+344deg
+, black, transparent);
+    padding: 1.2rem;
+    box-shadow: 1px 2px 11px black;
+    border-radius:1rem;
+}
+.header{
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    font-family: cursive;
+}
+.currencyBox{
+    width: 15rem;
+    text-align: center;
+    /* height: 2rem; */
+    margin-top: 1rem;
+}
+.selected-currency{
+    display: inline-block;
+    background: linear-gradient(
+126deg
+, white, lightblue);
+    width: 20%;
+    /* border: 1p; */
+    border-radius: 5px;
+    box-shadow: 0px 2px 12px black;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.inputbox-wrapper{
+    display: inline-block;
+    margin-left: 1rem;
+    vertical-align: middle;
+}
+.arrow-down{
+    display: inline-block;
+    vertical-align: middle;
+}
+.input-curr-box{
+    cursor: pointer;
+    
+}
+.modal{
+    position: absolute;
+    z-index: 1;
+}
+.modal_off{
+    display: none;
+}
+.add-btn{
+    background: linear-gradient(123deg,#9CECFB,#65C7F7,#0052D4);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.5rem 0.2rem;
+    cursor: pointer;
+    /* margin-top: 1rem; */
+    width: 7rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}

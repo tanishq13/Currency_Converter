@@ -1,0 +1,72 @@
+.container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+}
+.currency_list_wrapper{
+    position: absolute;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 20%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    background: white;
+}
+.wrapper{
+    overflow-y: scroll;
+    height: 86%;
+    margin-top: 1rem;
+}
+.search_box_wrapper{
+    width: 100%;
+    height: 10%;
+}
+.search_box{
+    width: 80%;
+    height: 100%;
+}
+.input_search_box{
+    height: 100%;
+    outline: none;
+    width: 100%;
+    border: 1px solid;
+    font-size: 1.2rem;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: lightgrey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: lightgrey; 
+}
+ul.wrapper {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+  }
+.currency-wrapper{
+    padding: 0.01rem 0.5rem;
+    width: 90%;
+}
+.currency-wrapper:hover{
+    background: linear-gradient(
+364deg
+, black, transparent);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}

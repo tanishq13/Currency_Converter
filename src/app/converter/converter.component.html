@@ -1,0 +1,25 @@
+<div class="container">
+    <app-select-currency [ngClass]="{'modal':selectCurrencyModal==true,'modal_off':selectCurrencyModal==false}"></app-select-currency>
+    <app-select-currency-options [ngClass]="{'modal':showCurrencyOptionModal==true,'modal_off':showCurrencyOptionModal==false}"></app-select-currency-options>
+    <div class="wrapper">
+        <div class="header">Currency Converter</div>
+        <!-- <div class="currencyBox">
+            <div class="selected-currency" (click)="openCurrencyModal()">{{myCurr}}</div>
+            <div class="inputbox-wrapper">
+                <input type="number" class="input-curr-box" [(ngModel)]="input1">
+            </div>
+            <div class="arrow-down"></div>zzz
+        </div> -->
+        <div class="currencyBox" *ngFor="let currency of conversion_list;let i = index">
+        <!-- <div class="currencyBox"> -->
+            <div class="selected-currency" (click)="resetCurrency(i)">{{currency.short_name}}</div>
+            <div class="inputbox-wrapper">
+                <input type="number" class="input-curr-box" [(ngModel)]="currency.value" (ngModelChange)="conversion_initiated(i)" min = '0'>
+            </div>
+            <div class="arrow-down"></div>
+        </div>
+        <div class="add-btn" (click)="addCurrency()">
+            <p>Add Currency</p>
+        </div>
+    </div>
+</div>
